@@ -1,5 +1,5 @@
 <template>
-    <ion-content>
+    <ion-content id="messagesContainer">
         <div id="messagesList">
             <div v-for="(message, i) of messages" :key="i" class="message">   
                 <div>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+    #messagesContainer{
+        --background: white;
+    }
     .message {
         display: flex;
         justify-content: flex-end;
@@ -43,20 +46,23 @@ export default {
         width: 100%;
     }
     .messageBubble{
-        border-radius: 15px;
         color: white;
-        background: var(--primary);
+        background: grey;
+
+        border-radius: 15px;
         padding: 10px;
     }
     .nameTag {
         color: rgba(0,0,0,0.4);
+
         font-size: 0.8em;
     }
     .avatar {
+        border: solid 2px rgba(0,0,0,0.5);
+
         width: 40px;
         height: 40px;
         margin: 0px 10px;
-        border: solid 2px rgba(0,0,0,0.5);
         display: flex;
         align-items: center;
         justify-content: center;

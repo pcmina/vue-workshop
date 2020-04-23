@@ -1,9 +1,9 @@
 <template>
-  <ion-header>
+  <ion-header id="topBar">
     <ion-toolbar>
-      <ion-title slot="start">{{name || "title"}}</ion-title>
+      <ion-title id="title"  slot="start">{{name || "title"}}</ion-title>
       <ion-button @click="openModal" size="small" slot="end" fill="clear">
-        <ios-cog-icon  w="35px" h="35px"/> 
+        <ios-cog-icon id="settingsIcon" w="35px" h="35px"/> 
       </ion-button>
     </ion-toolbar>
   </ion-header>
@@ -38,6 +38,18 @@
       },
 
     },
-
   }
 </script>
+
+<style scoped>
+  #topBar{
+    --background: white
+  }
+  #title {
+    color: black
+  }
+  #settingsIcon {
+    fill: black
+  }
+
+</style>

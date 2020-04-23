@@ -3,12 +3,7 @@
       <ion-item lines="none" id="bottom" class="bootomItem">
         <b-popover target="emijiKeyboard" triggers="hover" placement="top">
           <template v-slot:title>Emoji</template>
-          <ion-button 
-            v-for="emoji of emojis"
-            :key="emoji"
-            @click="text += emoji"
-            fill="clear"
-          >
+          <ion-button v-for="emoji of emojis" :key="emoji" @click="text += emoji" fill="clear">
             {{emoji}}
           </ion-button>
         </b-popover>
@@ -56,7 +51,8 @@
 
   #messageInput{
     background: rgba(0,0,0,0.2);
-    color: balck;
+    color: black;
+    
     border-radius: 250px;
     padding: 10px;
     width: 100%;

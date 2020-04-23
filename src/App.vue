@@ -1,5 +1,6 @@
 <template>
   <ion-app>
+    
   </ion-app>
 </template>
 
@@ -8,6 +9,10 @@ import MessagesPlugin from '@/plugins/messages.js'
 
 export default {
   name: 'App',
+  
+  components: {
+
+  },
 
   provide: {
     messagesService: new MessagesPlugin()
