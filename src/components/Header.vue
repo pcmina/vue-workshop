@@ -1,10 +1,11 @@
 <template>
-  <ion-header id="topBar">
-    <ion-toolbar>
+  <ion-header>
+    <ion-toolbar id="topBar">
       <ion-title id="title"  slot="start">{{name || "title"}}</ion-title>
       <ion-button @click="openModal" size="small" slot="end" fill="clear">
         <ios-cog-icon id="settingsIcon" w="35px" h="35px"/> 
       </ion-button>
+      <button @click="$emit('myClick')"> send event </button>
     </ion-toolbar>
   </ion-header>
 </template>
@@ -43,13 +44,13 @@
 
 <style scoped>
   #topBar{
-    --background: white
+    --background: orange
   }
   #title {
-    color: black
+    color: red
   }
   #settingsIcon {
-    fill: black
+    fill: blue
   }
 
 </style>

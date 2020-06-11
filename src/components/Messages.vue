@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
     #messagesContainer{
-        --background: white;
+        --background: orange;
     }
     .message {
         display: flex;
@@ -46,8 +46,8 @@ export default {
         width: 100%;
     }
     .messageBubble{
-        color: white;
-        background: grey;
+        color: black;
+        background: yellow;
 
         border-radius: 15px;
         padding: 10px;
@@ -58,7 +58,7 @@ export default {
         font-size: 0.8em;
     }
     .avatar {
-        border: solid 2px rgba(0,0,0,0.5);
+        border: solid 2px yellow;
 
         width: 40px;
         height: 40px;
@@ -68,6 +68,6 @@ export default {
         justify-content: center;
     }
     .avaterIcon{
-        fill: black;
+        fill: yellow;
     }
 </style>

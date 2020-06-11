@@ -42,16 +42,16 @@
 
 <style scoped>
   #bottomBar{
-    background: #eeeeee;
+    background: orange;
   }
 
   .iconPrimaryColor {
-    fill: var(--primary)
+    fill: red
   }
 
   #messageInput{
-    background: rgba(0,0,0,0.2);
-    color: black;
+    background: yellow;
+    color: blue;
     
     border-radius: 250px;
     padding: 10px;
